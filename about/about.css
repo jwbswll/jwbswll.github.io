@@ -1,0 +1,46 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .page-heading {
+  padding: 80px 0 50px 0;
+}
+main .about-content {
+  width: 85vw;
+  padding: 0;
+}
+main .about-content__para {
+  margin-bottom: 2vh;
+  text-align: left;
+  font-size: 1.1em;
+}
+main .known-tech {
+  display: flex;
+  width: 60vw;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+main .known-tech__heading {
+  padding-top: 2vh;
+  padding-bottom: 3.5vh;
+}
+main .known-tech__container {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 70px;
+}
+main .known-tech__container--label {
+  font-weight: 600;
+  font-size: 0.7em;
+}
+main .known-tech__container--icon {
+  font-size: 40px;
+  padding-bottom: 1vh;
+}
+
+/*# sourceMappingURL=about.css.map */

@@ -1,0 +1,47 @@
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+body .header {
+  margin: 20px 20px;
+}
+body .header__name {
+  color: #5C374C;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: left;
+}
+body .header__job-title {
+  color: #5C374C;
+  font-size: 30px;
+  padding-top: 10px;
+}
+body .image-container {
+  margin: 90px 0 80px 0;
+  height: 210px;
+  display: flex;
+  justify-content: center;
+}
+body .image-container__image {
+  border: 5px solid #5C374C;
+  border-radius: 70%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+body .navbar-section {
+  margin-right: 20px;
+}
+body .navbar-section__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+body .navbar-section__nav--link {
+  padding: 10px;
+  font-size: 50px;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=home.css.map */

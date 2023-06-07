@@ -1,0 +1,36 @@
+* {
+  font-family: "Spline Sans Mono", monospace;
+  background-color: #9799ca;
+  color: #5C374C;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.external-link {
+  text-decoration: none;
+  color: #FFCAB1;
+}
+.external-link:hover {
+  color: #5C374C;
+}
+
+.home-button {
+  height: 50px;
+  width: 50px;
+  background-color: #5C374C;
+  z-index: 1;
+  left: 30px;
+  bottom: 30px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+}
+.home-button i {
+  font-size: 30px;
+  background-color: #5C374C;
+  color: #FFCAB1;
+}
+
+/*# sourceMappingURL=style.css.map */

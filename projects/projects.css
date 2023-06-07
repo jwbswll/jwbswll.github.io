@@ -1,0 +1,39 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+main .page-heading {
+  padding: 50px 0 50px 0;
+}
+main .projects-gallery {
+  display: flex;
+  width: 70vw;
+  justify-content: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+main .projects-gallery--item {
+  width: 265px;
+  display: flex;
+  justify-content: column;
+  flex-wrap: wrap;
+}
+main .projects-gallery--item__img {
+  height: 176.7px;
+}
+main .projects-gallery--item__para {
+  margin-top: 3vh;
+  font-size: 1em;
+}
+main .projects-gallery--item__links {
+  display: flex;
+  width: 265px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3vh 0 7vh 0;
+  font-size: 30px;
+}
+
+/*# sourceMappingURL=projects.css.map */

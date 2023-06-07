@@ -1,0 +1,36 @@
+@use 'colors' as c;
+
+* {
+  font-family: "Spline Sans Mono", monospace;
+  background-color: c.$primary;
+  color: c.$secondary;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+.external-link {
+  text-decoration: none;
+  color: c.$tertiary;
+  &:hover {
+    color: c.$secondary;
+  }
+}
+
+.home-button {
+  height: 50px;
+  width: 50px;
+  background-color: c.$secondary;
+  z-index: 1;
+  left: 30px;
+  bottom: 30px;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20%;
+  i {
+    font-size: 30px;
+    background-color: c.$secondary;
+    color: c.$tertiary
+  }
+}

@@ -1,0 +1,32 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .page-heading {
+  padding: 320px 0 50px 0;
+}
+main p {
+  padding-bottom: 7vh;
+  font-size: 1em;
+}
+main .contact-links {
+  width: 20vw;
+  height: 10vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+main .contact-links__icon {
+  font-size: 60px;
+  text-decoration: none;
+  color: #FFCAB1;
+  background-color: #9799ca;
+  margin: 2vh 5vw 2vh 5vw;
+}
+main .contact-links__icon:hover {
+  color: #5C374C;
+}
+
+/*# sourceMappingURL=contact.css.map */
