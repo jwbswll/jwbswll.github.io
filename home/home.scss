@@ -35,10 +35,7 @@ body {
       left: 2vw;
       top: 2vh;
     }
-    @include m.laptop {
-      // margin: 100px 0 0 40px;
-    }
-    
+
     &__name {
       color: c.$secondary;
       font-size: 50px;
@@ -52,6 +49,9 @@ body {
       }
       @include m.laptop {
         font-size: 90px;
+      }
+      @include m.hi-res {
+        font-size: 95px;
       }
     }
     &__job-title {
@@ -96,6 +96,13 @@ body {
       left: 38vw;
       top: 17vh;
     }
+    @include m.hi-res {
+      height: 350px;
+      z-index: 1;
+      position: fixed;
+      left: 39vw;
+      top: 24vh;
+    }
     &__image {
       border: 5px solid c.$secondary;
       border-radius: 70%;
@@ -113,6 +120,10 @@ body {
       @include m.laptop {
         width: 290px;
         height: 290px;
+      }
+      @include m.hi-res {
+        width: 340px;
+        height: 340px;
       }
     }
   }
@@ -147,13 +158,23 @@ body {
         }
         @include m.laptop {
           font-size: 80px;
+          &:hover {
+            background-color: c.$secondary;
+            color: c.$primary;
+            transform: translate(-25px);
+            transition: 0.6s;
+          }
         }
-        // &:hover {
-        //   background-color: c.$secondary;
-        //   color: c.$primary;
-        //   transform: translate(25px);
-        //   transition: 0.6s;
-        // }
+        @include m.hi-res {
+          font-size: 90px;
+          &:hover {
+            background-color: c.$secondary;
+            color: c.$primary;
+            transform: translate(-25px);
+            transition: 0.6s;
+        }
+
+        }
       }
     }
   }
