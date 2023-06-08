@@ -1,23 +1,23 @@
 * {
   font-family: "Spline Sans Mono", monospace;
-  background-color: #9799ca;
-  color: #5C374C;
+  background-color: #F5DDB7;
+  color: #e3783b;
   scroll-behavior: smooth;
   margin: 0;
 }
 
 .external-link {
   text-decoration: none;
-  color: #FFCAB1;
+  color: #e3783b;
 }
 .external-link:hover {
-  color: #5C374C;
+  color: #e3783b;
 }
 
 .home-button {
   height: 50px;
   width: 50px;
-  background-color: #FFCAB1;
+  background-color: #e3783b;
   z-index: 1;
   left: 30px;
   bottom: 30px;
@@ -33,17 +33,17 @@
     width: 80px;
   }
   .home-button:hover {
-    background-color: #5C374C;
+    background-color: #e3783b;
   }
   .home-button:hover i {
-    background-color: #5C374C;
-    color: #FFCAB1;
+    background-color: #e3783b;
+    color: #e3783b;
   }
 }
 .home-button i {
   font-size: 30px;
-  background-color: #FFCAB1;
-  color: #5C374C;
+  background-color: #e3783b;
+  color: #e3783b;
 }
 @media only screen and (min-width: 481px) {
   .home-button i {

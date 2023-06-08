@@ -19,7 +19,7 @@
 }
 
 @mixin laptop {
-  @media only screen and (min-width: (b.$lg + 1px)) and (max-width: b.$xxl) {
+  @media only screen and (min-width: (b.$xl + 1px)) and (max-width: b.$xxl) {
     @content;
   }
 }

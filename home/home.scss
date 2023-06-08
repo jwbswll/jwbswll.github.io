@@ -1,5 +1,5 @@
 @use '../partials/mixin' as m;
-@use '../colors.scss' as c;
+@use '../colors' as c;
 
 
 
@@ -16,7 +16,7 @@ body {
   }
   @include m.laptop {
     height: 100vh;
-    justify-content: space-between;
+    // justify-content: space-between;
   }
   @include m.hi-res {
     height: 100vh;
@@ -48,7 +48,7 @@ body {
         font-size: 70px;
       }
       @include m.laptop {
-        font-size: 90px;
+        font-size: 70px;
       }
       @include m.hi-res {
         font-size: 95px;
@@ -73,10 +73,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 1;
     @include m.tablet {
       height: 300px;
       margin: 0;
-      z-index: 0;
+      z-index: 1;
       position: fixed;
       left: 21.5vh;
       top: 35vh;
@@ -87,21 +88,21 @@ body {
       z-index: 1;
       position: fixed;
       left: 37vw;
-      top: 34vh;
+      top: 35vh;
     }
     @include m.laptop {
       height: 300px;
       z-index: 1;
       position: fixed;
       left: 38vw;
-      top: 17vh;
+      top: 25vh;
     }
     @include m.hi-res {
       height: 350px;
       z-index: 1;
       position: fixed;
       left: 39vw;
-      top: 24vh;
+      top: 22vh;
     }
     &__image {
       border: 5px solid c.$secondary;
@@ -118,8 +119,8 @@ body {
         height: 280px;
       }
       @include m.laptop {
-        width: 290px;
-        height: 290px;
+        width: 280px;
+        height: 280px;
       }
       @include m.hi-res {
         width: 340px;
