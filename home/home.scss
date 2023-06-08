@@ -13,6 +13,10 @@ body {
   @include m.tablet-landscape {
     justify-content: space-between;
   }
+  @include m.laptop {
+    height: 100vh;
+    justify-content: space-between;
+  }
 
   .header {
     margin: 20px 20px;
@@ -26,6 +30,10 @@ body {
       left: 2vw;
       top: 2vh;
     }
+    @include m.laptop {
+      // margin: 100px 0 0 40px;
+    }
+    
     &__name {
       color: c.$secondary;
       font-size: 50px;
@@ -36,6 +44,9 @@ body {
       }
       @include m.tablet-landscape {
         font-size: 70px;
+      }
+      @include m.laptop {
+        font-size: 90px;
       }
     }
     &__job-title {
@@ -73,6 +84,13 @@ body {
       left: 37vw;
       top: 34vh;
     }
+    @include m.laptop {
+      height: 300px;
+      z-index: 1;
+      position: fixed;
+      left: 38vw;
+      top: 17vh;
+    }
     &__image {
       border: 5px solid c.$secondary;
       border-radius: 70%;
@@ -86,6 +104,10 @@ body {
       @include m.tablet-landscape {
         width: 280px;
         height: 280px;
+      }
+      @include m.laptop {
+        width: 290px;
+        height: 290px;
       }
     }
   }
@@ -117,6 +139,9 @@ body {
         }
         @include m.tablet-landscape {
           font-size: 70px;
+        }
+        @include m.laptop {
+          font-size: 80px;
         }
         // &:hover {
         //   background-color: c.$secondary;

@@ -14,6 +14,12 @@ body {
     justify-content: space-between;
   }
 }
+@media only screen and (min-width: 1011px) and (max-width: 1400px) {
+  body {
+    height: 100vh;
+    justify-content: space-between;
+  }
+}
 body .header {
   margin: 20px 20px;
 }
@@ -45,6 +51,11 @@ body .header__name {
 @media only screen and (min-width: 1011px) and (max-width: 1200px) {
   body .header__name {
     font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1011px) and (max-width: 1400px) {
+  body .header__name {
+    font-size: 90px;
   }
 }
 body .header__job-title {
@@ -89,6 +100,15 @@ body .image-container {
     top: 34vh;
   }
 }
+@media only screen and (min-width: 1011px) and (max-width: 1400px) {
+  body .image-container {
+    height: 300px;
+    z-index: 1;
+    position: fixed;
+    left: 38vw;
+    top: 17vh;
+  }
+}
 body .image-container__image {
   border: 5px solid #5C374C;
   border-radius: 70%;
@@ -106,6 +126,12 @@ body .image-container__image {
   body .image-container__image {
     width: 280px;
     height: 280px;
+  }
+}
+@media only screen and (min-width: 1011px) and (max-width: 1400px) {
+  body .image-container__image {
+    width: 290px;
+    height: 290px;
   }
 }
 body .navbar-section {
@@ -145,6 +171,11 @@ body .navbar-section__nav--link {
 @media only screen and (min-width: 1011px) and (max-width: 1200px) {
   body .navbar-section__nav--link {
     font-size: 70px;
+  }
+}
+@media only screen and (min-width: 1011px) and (max-width: 1400px) {
+  body .navbar-section__nav--link {
+    font-size: 80px;
   }
 }
 
