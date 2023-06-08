@@ -17,10 +17,14 @@ body {
   .header {
     margin: 20px 20px;
     @include m.tablet {
-      margin: 50px 50px;
+      position: fixed;
+      left: 3vw;
+      top: 2vh;
     }
     @include m.tablet-landscape {
-      margin: 50px 0 0 50px;
+      position: fixed;
+      left: 2vw;
+      top: 2vh;
     }
     &__name {
       color: c.$secondary;
@@ -88,12 +92,6 @@ body {
 
   .navbar-section {
     margin-right: 20px;
-    @include m.tablet {
-      margin: 40px 40px;
-    }
-    @include m.tablet-landscape {
-      margin: 40px 40px;
-    }
     &__nav {
       display: flex;
       flex-direction: column;
@@ -107,8 +105,8 @@ body {
       @include m.tablet-landscape {
         z-index: -1;
         position: fixed;
-        left: 66vw;
-        top: 59vh;
+        left: 65.5vw;
+        top: 58vh;
       }
       &--link {
         padding: 10px;

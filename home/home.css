@@ -19,12 +19,16 @@ body .header {
 }
 @media only screen and (min-width: 481px) and (max-width: 820px) {
   body .header {
-    margin: 50px 50px;
+    position: fixed;
+    left: 3vw;
+    top: 2vh;
   }
 }
 @media only screen and (min-width: 1011px) and (max-width: 1200px) {
   body .header {
-    margin: 50px 0 0 50px;
+    position: fixed;
+    left: 2vw;
+    top: 2vh;
   }
 }
 body .header__name {
@@ -107,16 +111,6 @@ body .image-container__image {
 body .navbar-section {
   margin-right: 20px;
 }
-@media only screen and (min-width: 481px) and (max-width: 820px) {
-  body .navbar-section {
-    margin: 40px 40px;
-  }
-}
-@media only screen and (min-width: 1011px) and (max-width: 1200px) {
-  body .navbar-section {
-    margin: 40px 40px;
-  }
-}
 body .navbar-section__nav {
   display: flex;
   flex-direction: column;
@@ -134,8 +128,8 @@ body .navbar-section__nav {
   body .navbar-section__nav {
     z-index: -1;
     position: fixed;
-    left: 66vw;
-    top: 59vh;
+    left: 65.5vw;
+    top: 58vh;
   }
 }
 body .navbar-section__nav--link {
