@@ -17,7 +17,7 @@
 .home-button {
   height: 50px;
   width: 50px;
-  background-color: #5C374C;
+  background-color: #FFCAB1;
   z-index: 1;
   left: 30px;
   bottom: 30px;
@@ -27,33 +27,27 @@
   align-items: center;
   border-radius: 20%;
 }
-@media only screen and (min-width: 481px) and (max-width: 820px) {
-  .home-button {
-    height: 80px;
-    width: 80px;
-  }
-}
 @media only screen and (min-width: 481px) {
   .home-button {
     height: 80px;
     width: 80px;
+  }
+  .home-button:hover {
+    background-color: #5C374C;
+  }
+  .home-button:hover i {
+    background-color: #5C374C;
+    color: #FFCAB1;
   }
 }
 .home-button i {
   font-size: 30px;
-  background-color: #5C374C;
-  color: #FFCAB1;
-}
-@media only screen and (min-width: 481px) and (max-width: 820px) {
-  .home-button i {
-    font-size: 50px;
-    color: #FFCAB1;
-  }
+  background-color: #FFCAB1;
+  color: #5C374C;
 }
 @media only screen and (min-width: 481px) {
   .home-button i {
     font-size: 45px;
-    color: #FFCAB1;
   }
 }
 

@@ -20,7 +20,7 @@
 .home-button {
   height: 50px;
   width: 50px;
-  background-color: c.$secondary;
+  background-color: c.$tertiary;
   z-index: 1;
   left: 30px;
   bottom: 30px;
@@ -29,25 +29,23 @@
   justify-content: center;
   align-items: center;
   border-radius: 20%;
-  @include m.tablet {
-    height: 80px;
-    width: 80px;
-  }
   @include m.home-button-large {
     height: 80px;
     width: 80px;
+    &:hover {
+      background-color: c.$secondary;
+      i {
+        background-color: c.$secondary;
+        color: c.$tertiary;
+      }
+    }
   }
   i {
     font-size: 30px;
-    background-color: c.$secondary;
-    color: c.$tertiary;
-    @include m.tablet {
-      font-size: 50px;
-      color: c.$tertiary;
-    }
+    background-color: c.$tertiary;
+    color: c.$secondary;
     @include m.home-button-large {
       font-size: 45px;
-      color: c.$tertiary;
     }
   }
 }
