@@ -1,8 +1,13 @@
 @use '../colors.scss' as c;
+@use '../partials/mixin' as m;
 
 main {
   .page-heading {
     padding: 320px 0 50px 0;
+    @include m.tablet {
+      padding-top: 480px;
+      font-size: 2em;
+    }
   }
   display: flex;
   flex-direction: column;
@@ -12,10 +17,16 @@ main {
   p {
     padding-bottom: 7vh;
     font-size: 1em;
+    @include m.tablet {
+      font-size: 1.6em;
+    }
+    @include m.tablet-landscape {
+      font-size: 1.6em;
+    }
   }
   .contact-links {
     width: 20vw;
-    height: 10vw;
+    height: 7vw;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,6 +36,14 @@ main {
       color: c.$tertiary;
       background-color: c.$primary;
       margin: 2vh 5vw 2vh 5vw;
+      @include m.tablet {
+        font-size: 80px;
+        margin: 0 5vw 2vh 5vw;
+      }
+      @include m.tablet-landscape {
+        font-size: 80px;
+        margin: 0 3vw 2vh 3vw;
+      }
       &:hover {
         color: c.$secondary
       }

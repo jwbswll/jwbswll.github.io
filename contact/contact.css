@@ -7,13 +7,29 @@ main {
 main .page-heading {
   padding: 320px 0 50px 0;
 }
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+  main .page-heading {
+    padding-top: 480px;
+    font-size: 2em;
+  }
+}
 main p {
   padding-bottom: 7vh;
   font-size: 1em;
 }
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+  main p {
+    font-size: 1.6em;
+  }
+}
+@media only screen and (min-width: 1011px) and (max-width: 1200px) {
+  main p {
+    font-size: 1.6em;
+  }
+}
 main .contact-links {
   width: 20vw;
-  height: 10vw;
+  height: 7vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -24,6 +40,18 @@ main .contact-links__icon {
   color: #FFCAB1;
   background-color: #9799ca;
   margin: 2vh 5vw 2vh 5vw;
+}
+@media only screen and (min-width: 481px) and (max-width: 820px) {
+  main .contact-links__icon {
+    font-size: 80px;
+    margin: 0 5vw 2vh 5vw;
+  }
+}
+@media only screen and (min-width: 1011px) and (max-width: 1200px) {
+  main .contact-links__icon {
+    font-size: 80px;
+    margin: 0 3vw 2vh 3vw;
+  }
 }
 main .contact-links__icon:hover {
   color: #5C374C;

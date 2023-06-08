@@ -1,6 +1,14 @@
+@use '../partials/mixin' as m;
+
 main {
   .page-heading {
     padding: 80px 0 50px 0;
+    @include m.tablet {
+      font-size: 2em;
+    }
+    @include m.tablet-landscape {
+      font-size: 2em;
+    }
   }
   display: flex;
   flex-direction: column;
@@ -13,6 +21,12 @@ main {
       margin-bottom: 2vh;
       text-align: left;
       font-size: 1.1em;
+      @include m.tablet {
+        font-size: 1.4em;
+      }
+      @include m.tablet-landscape {
+        font-size: 1.4em;
+      }
     }
   
   }.known-tech {
@@ -20,9 +34,23 @@ main {
     width: 60vw;
     flex-wrap: wrap;
     justify-content: space-around;
+    @include m.tablet {
+      width: 70vw
+    }
+    @include m.tablet-landscape {
+      width: 70vw
+    }
     &__heading {
     padding-top: 2vh;
     padding-bottom: 3.5vh;
+    @include m.tablet {
+      font-size: 1.5em;
+      padding: 2vh 0 4vh 0;
+    }
+    @include m.tablet-landscape {
+      font-size: 1.5em;
+      padding: 3vh 0 6vh 0;
+    }
     }
     &__container {
       display: flex;
@@ -34,10 +62,22 @@ main {
       &--label {
         font-weight: 600;
         font-size: 0.7em;
+        @include m.tablet {
+          font-size: 1em;
+        }
+        @include m.tablet-landscape {
+          font-size: 1em;
+        }
       }
       &--icon {
         font-size: 40px;
         padding-bottom: 1vh;
+        @include m.tablet {
+          font-size: 50px;;
+        }
+        @include m.tablet-landscape {
+          font-size: 50px;;
+        }
       }
     }
   }
