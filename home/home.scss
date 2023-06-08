@@ -1,5 +1,6 @@
-@use '../colors.scss' as c;
 @use '../partials/mixin' as m;
+@use '../colors.scss' as c;
+
 
 
 body {
@@ -14,6 +15,10 @@ body {
     justify-content: space-between;
   }
   @include m.laptop {
+    height: 100vh;
+    justify-content: space-between;
+  }
+  @include m.hi-res {
     height: 100vh;
     justify-content: space-between;
   }

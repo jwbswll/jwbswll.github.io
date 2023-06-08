@@ -24,7 +24,7 @@
   }
 }
 
-@mixin desktop-and-up {
+@mixin hi-res {
   @media only screen and (min-width: (b.$xxl + 1px)) {
     @content;
   }
