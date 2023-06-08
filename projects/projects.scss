@@ -1,3 +1,5 @@
+@use '../partials/mixin' as m;
+
 main {
   display: flex;
   flex-direction: column;
@@ -5,20 +7,49 @@ main {
   align-items: center;
   .page-heading {
     padding: 50px 0 50px 0;
+    @include m.tablet {
+      font-size: 2em;
+      padding-bottom: 30px;
+    }
+    @include m.tablet-landscape {
+      font-size: 2em;
+      padding-top: 40px
+    }
+
   }
   .projects-gallery {
     display: flex;
-    width: 70vw;
+    width: 265px;
     justify-content: column;
     align-items: center;
     flex-wrap: wrap;
+    @include m.tablet {
+      width: 100vw;
+      justify-content: space-evenly;
+    }
+    @include m.tablet-landscape {
+      width: 100vw;
+      justify-content: space-evenly;
+    }
+
     &--item {
       width: 265px;
+      height: 480px;
       display: flex;
-      justify-content: column;
+      justify-content: space-between;
       flex-wrap: wrap;
+      align-items: flex-start;
+      @include m.tablet {
+        margin: 30px;
+        justify-content: space-evenly;
+      }
+      @include m.tablet-landscape {
+        justify-content: space-;
+        padding: 0 42px 0 42px;
+      }
       &__img {
         height: 176.7px;
+        object-fit: cover;
       }
       &__para {
         margin-top: 3vh;
@@ -31,6 +62,7 @@ main {
         align-items: center;
         margin: 3vh 0 7vh 0;
         font-size: 30px;
+        justify-self: flex-end;
       }
     }
   }
