@@ -9,6 +9,12 @@ main {
     @include m.tablet-landscape {
       font-size: 2em;
     }
+    @include m.laptop {
+      font-size: 2em;
+    }
+    @include m.hi-res {
+      font-size: 2em;
+    }
   }
   display: flex;
   flex-direction: column;
@@ -22,10 +28,15 @@ main {
       text-align: left;
       font-size: 1.1em;
       @include m.tablet {
-        font-size: 1.4em;
+        font-size: 1.2em;
       }
       @include m.tablet-landscape {
-        font-size: 1.4em;
+        font-size: 1.2em;
+      }
+      @include m.hi-res {
+        margin-left: 15vw;
+        margin-right: 15vw;
+        
       }
     }
   
@@ -51,6 +62,14 @@ main {
       font-size: 1.5em;
       padding: 3vh 0 6vh 0;
     }
+    @include m.laptop {
+      font-size: 1.3rem;
+      padding: 4vh 0 6vh 0;
+    }
+    @include m.hi-res {
+      font-size: 1.4rem;
+      padding: 4vh 0 6vh 0;
+    }
     }
     &__container {
       display: flex;
@@ -68,6 +87,12 @@ main {
         @include m.tablet-landscape {
           font-size: 1em;
         }
+        @include m.laptop {
+          font-size: 1.2em;
+        }
+        @include m.hi-res {
+          font-size: 1.2em;
+        }
       }
       &--icon {
         font-size: 40px;
@@ -77,6 +102,12 @@ main {
         }
         @include m.tablet-landscape {
           font-size: 50px;;
+        }
+        @include m.laptop {
+          font-size: 55px;
+        }
+        @include m.hi-res {
+          font-size: 55px;
         }
       }
     }

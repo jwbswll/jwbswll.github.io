@@ -1,4 +1,5 @@
 @use '../partials/mixin' as m;
+@use '../colors' as c;
 
 main {
   display: flex;
@@ -28,7 +29,15 @@ main {
       justify-content: space-evenly;
     }
     @include m.tablet-landscape {
-      width: 100vw;
+      width: 90vw;
+      justify-content: space-evenly;
+    }
+    @include m.laptop {
+      width: 90vw;
+      justify-content: space-evenly;
+    }
+    @include m.hi-res {
+      width: 65vw;
       justify-content: space-evenly;
     }
 
@@ -44,12 +53,21 @@ main {
         justify-content: space-evenly;
       }
       @include m.tablet-landscape {
-        justify-content: space-;
-        padding: 0 42px 0 42px;
+        justify-content: space-evenly;
+        padding: 0 20px 40px 20px;
       }
+      @include m.laptop {
+        padding: 0 50px 40px 50px;
+      }
+      @include m.hi-res {
+        padding: 0 40px 40px 40px;
+      }
+
       &__img {
         height: 176.7px;
         object-fit: cover;
+        border: 3px solid c.$tertiary;
+        border-radius: 30px;
       }
       &__para {
         margin-top: 3vh;

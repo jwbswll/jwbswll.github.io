@@ -13,7 +13,7 @@
 }
 
 @mixin tablet-landscape {
-  @media only screen and (min-width: (b.$lg + 1px)) and (max-width: b.$xl) {
+  @media only screen and (min-width: (b.$md + 1px)) and (max-width: b.$xl) {
     @content;
   }
 }

@@ -1,7 +1,7 @@
 @use '../partials/mixin' as m;
 @use '../colors' as c;
 
-
+// change color of border around image to gradient from header color to nav color
 
 body {
   display: flex;
@@ -74,6 +74,31 @@ body {
     justify-content: center;
     align-items: center;
     z-index: 1;
+    &__background {
+      background: linear-gradient(140deg, c.$secondary, c.$tertiary);
+      border-radius: 50%;
+      width: 230px;
+      height: 230px;
+      z-index: -1;
+      filter: blur(16px);
+      position: absolute;
+      @include m.tablet {
+        width: 330px;
+        height: 330px;
+      }
+      @include m.tablet-landscape {
+        width: 310px;
+        height: 310px;
+      }
+      @include m.laptop {
+        width: 310px;
+        height: 310px;
+      }
+      @include m.hi-res {
+        width: 370px;
+        height: 370px;
+      }
+    }
     @include m.tablet {
       height: 300px;
       margin: 0;
@@ -105,11 +130,11 @@ body {
       top: 22vh;
     }
     &__image {
-      border: 5px solid c.$secondary;
-      border-radius: 70%;
+      border-radius: 50%;
       width: 200px;
       height: 200px;
       object-fit: cover;
+      z-index: 0;
       @include m.tablet {
         width: 300px;
         height: 300px;
