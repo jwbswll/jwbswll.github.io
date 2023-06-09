@@ -13,7 +13,7 @@ main .page-heading {
     padding-bottom: 30px;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1200px) {
+@media only screen and (min-width: 1011px) and (max-width: 1280px) {
   main .page-heading {
     font-size: 2em;
     padding-top: 40px;
@@ -32,7 +32,7 @@ main .projects-gallery {
     justify-content: space-evenly;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1200px) {
+@media only screen and (min-width: 1011px) and (max-width: 1280px) {
   main .projects-gallery {
     width: 100vw;
     justify-content: space-evenly;
@@ -52,7 +52,7 @@ main .projects-gallery--item {
     justify-content: space-evenly;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1200px) {
+@media only screen and (min-width: 1011px) and (max-width: 1280px) {
   main .projects-gallery--item {
     justify-content: space-;
     padding: 0 42px 0 42px;
