@@ -32,16 +32,16 @@ main {
       // padding-bottom: 7vh;
       font-size: 1em;
       @include m.tablet {
-        font-size: 1.6em;
+        font-size: 1.3em;
       }
       @include m.tablet-landscape {
-        font-size: 1.6em;
+        font-size: 1.3em;
       }
       @include m.laptop {
-        font-size: 1.6em;
+        font-size: 1.3em;
       }
       @include m.hi-res {
-        font-size: 1.6em;
+        font-size: 1.3em;
       }
     }
     .contact-links {
@@ -50,22 +50,42 @@ main {
       display: flex;
       justify-content: space-around;
       align-items: center;
+      @include m.laptop {
+          width: 10vw;
+      }
+      @include m.hi-res {
+        width: 10vw;
+    }
       &__icon {
         font-size: 60px;
         text-decoration: none;
         color: c.$tertiary;
         background-color: c.$primary;
         margin: 0vh 5vw 2vh 5vw;
+        
+        &:hover {
+          color: c.$secondary;
+          transition: 0.5s;
+        }
+        &:not(:hover) {
+          color: c.$tertiary;
+          transition: 0.5s;
+        }
         @include m.tablet {
-          font-size: 80px;
+          font-size: 65px;
           margin: 0 5vw 2vh 5vw;
         }
         @include m.tablet-landscape {
-          font-size: 80px;
+          font-size: 65px;
           margin: 0 3vw 2vh 3vw;
         }
-        &:hover {
-          color: c.$secondary
+        @include m.laptop {
+          font-size: 65px;
+          margin: 0 3vw 2vh 3vw;
+        }
+        @include m.hi-res {
+          font-size: 65px;
+          margin: 0 2vw 2vh 2vw;
         }
       }
     }

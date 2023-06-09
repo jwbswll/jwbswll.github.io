@@ -1,9 +1,13 @@
 * {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: "Larsseit", sans-serif;
   background-color: #F5DDB7;
   color: #983800;
   scroll-behavior: smooth;
   margin: 0;
+}
+
+.page-heading {
+  font-family: "AVENTENA", sans-serif;
 }
 
 .external-link {
@@ -12,6 +16,11 @@
 }
 .external-link:hover {
   color: #983800;
+  transition: 0.5s;
+}
+.external-link:not(:hover) {
+  color: #e38650;
+  transition: 0.5s;
 }
 
 .home-button {
@@ -34,10 +43,21 @@
   }
   .home-button:hover {
     background-color: #983800;
+    transition: 0.5s;
   }
   .home-button:hover i {
     background-color: #983800;
     color: #e38650;
+    transition: 0.5s;
+  }
+  .home-button:not(:hover) {
+    background-color: #e38650;
+    transition: 0.5s;
+  }
+  .home-button:not(:hover) i {
+    background-color: #e38650;
+    color: #983800;
+    transition: 0.5s;
   }
 }
 .home-button i {

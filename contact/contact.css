@@ -9,7 +9,7 @@ main {
     font-size: 2em;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   main .page-heading {
     font-size: 2em;
   }
@@ -38,22 +38,22 @@ main .center-content p {
 }
 @media only screen and (min-width: 481px) and (max-width: 820px) {
   main .center-content p {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   main .center-content p {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px) {
   main .center-content p {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 }
 @media only screen and (min-width: 1401px) {
   main .center-content p {
-    font-size: 1.6em;
+    font-size: 1.3em;
   }
 }
 main .center-content .contact-links {
@@ -62,27 +62,54 @@ main .center-content .contact-links {
   justify-content: space-around;
   align-items: center;
 }
+@media only screen and (min-width: 1281px) and (max-width: 1400px) {
+  main .center-content .contact-links {
+    width: 10vw;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  main .center-content .contact-links {
+    width: 10vw;
+  }
+}
 main .center-content .contact-links__icon {
   font-size: 60px;
   text-decoration: none;
-  color: #e3783b;
+  color: #e38650;
   background-color: #F5DDB7;
   margin: 0vh 5vw 2vh 5vw;
 }
+main .center-content .contact-links__icon:hover {
+  color: #983800;
+  transition: 0.5s;
+}
+main .center-content .contact-links__icon:not(:hover) {
+  color: #e38650;
+  transition: 0.5s;
+}
 @media only screen and (min-width: 481px) and (max-width: 820px) {
   main .center-content .contact-links__icon {
-    font-size: 80px;
+    font-size: 65px;
     margin: 0 5vw 2vh 5vw;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   main .center-content .contact-links__icon {
-    font-size: 80px;
+    font-size: 65px;
     margin: 0 3vw 2vh 3vw;
   }
 }
-main .center-content .contact-links__icon:hover {
-  color: #b74300;
+@media only screen and (min-width: 1281px) and (max-width: 1400px) {
+  main .center-content .contact-links__icon {
+    font-size: 65px;
+    margin: 0 3vw 2vh 3vw;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  main .center-content .contact-links__icon {
+    font-size: 65px;
+    margin: 0 2vw 2vh 2vw;
+  }
 }
 
 /*# sourceMappingURL=contact.css.map */

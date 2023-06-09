@@ -2,11 +2,15 @@
 @use './partials/mixin' as m;
 
 * {
-  font-family: "Spline Sans Mono", monospace;
+  font-family: 'Larsseit', sans-serif;
   background-color: c.$primary;
   color: c.$secondary;
   scroll-behavior: smooth;
   margin: 0;
+}
+
+.page-heading {
+  font-family: 'AVENTENA', sans-serif;
 }
 
 .external-link {
@@ -14,6 +18,11 @@
   color: c.$tertiary;
   &:hover {
     color: c.$secondary;
+    transition: 0.5s;
+  }
+  &:not(:hover) {
+    color: c.$tertiary;
+    transition: 0.5s;
   }
 }
 
@@ -34,9 +43,20 @@
     width: 80px;
     &:hover {
       background-color: c.$secondary;
+      transition: 0.5s;
       i {
         background-color: c.$secondary;
         color: c.$tertiary;
+        transition: 0.5s;
+      }
+    }
+    &:not(:hover) {
+      background-color: c.$tertiary;
+      transition: 0.5s;
+      i {
+        background-color: c.$tertiary;
+        color: c.$secondary;
+        transition: 0.5s;
       }
     }
   }
