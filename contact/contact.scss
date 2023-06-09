@@ -3,49 +3,70 @@
 
 main {
   .page-heading {
-    padding: 320px 0 50px 0;
     @include m.tablet {
-      padding-top: 480px;
+      font-size: 2em;
+    }
+    @include m.tablet-landscape {
+      font-size: 2em;
+    }
+    @include m.laptop {
+      font-size: 2em;
+    }
+    @include m.hi-res {
       font-size: 2em;
     }
   }
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-
-  p {
-    padding-bottom: 7vh;
-    font-size: 1em;
-    @include m.tablet {
-      font-size: 1.6em;
-    }
-    @include m.tablet-landscape {
-      font-size: 1.6em;
-    }
-  }
-  .contact-links {
-    width: 20vw;
-    height: 7vw;
+  height: 100vh;
+  .center-content {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    &__icon {
-      font-size: 60px;
-      text-decoration: none;
-      color: c.$tertiary;
-      background-color: c.$primary;
-      margin: 2vh 5vw 2vh 5vw;
+    flex-wrap: wrap;
+    height: 30vh;
+    width: 100vw;
+    p {
+      // padding-bottom: 7vh;
+      font-size: 1em;
       @include m.tablet {
-        font-size: 80px;
-        margin: 0 5vw 2vh 5vw;
+        font-size: 1.6em;
       }
       @include m.tablet-landscape {
-        font-size: 80px;
-        margin: 0 3vw 2vh 3vw;
+        font-size: 1.6em;
       }
-      &:hover {
-        color: c.$secondary
+      @include m.laptop {
+        font-size: 1.6em;
+      }
+      @include m.hi-res {
+        font-size: 1.6em;
+      }
+    }
+    .contact-links {
+      width: 20vw;
+      // height: 7vw;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &__icon {
+        font-size: 60px;
+        text-decoration: none;
+        color: c.$tertiary;
+        background-color: c.$primary;
+        margin: 0vh 5vw 2vh 5vw;
+        @include m.tablet {
+          font-size: 80px;
+          margin: 0 5vw 2vh 5vw;
+        }
+        @include m.tablet-landscape {
+          font-size: 80px;
+          margin: 0 3vw 2vh 3vw;
+        }
+        &:hover {
+          color: c.$secondary
+        }
       }
     }
   }
