@@ -220,8 +220,8 @@ body .navbar-section__nav {
   body .navbar-section__nav {
     z-index: 0;
     position: fixed;
-    left: 47vw;
-    top: 63vh;
+    left: 49vw;
+    top: 66vh;
   }
 }
 @media only screen and (min-width: 821px) and (max-width: 1280px) {

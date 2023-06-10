@@ -63,6 +63,7 @@ body {
       @include m.hi-res {
         font-size: 95px;
       }
+      
     }
     &__job-title {
       color: c.$secondary;
@@ -174,8 +175,8 @@ body {
       @include m.tablet {
         z-index: 0;
         position: fixed;
-        left: 47vw;
-        top: 63vh;
+        left: 49vw;
+        top: 66vh;
       }
       @include m.tablet-landscape {
         z-index: -1;

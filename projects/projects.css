@@ -50,7 +50,7 @@ main .projects-gallery {
     justify-content: space-evenly;
   }
 }
-main .projects-gallery--item {
+main .projects-gallery__item {
   width: 265px;
   height: 480px;
   display: flex;
@@ -59,38 +59,38 @@ main .projects-gallery--item {
   align-items: flex-start;
 }
 @media only screen and (min-width: 481px) and (max-width: 820px) {
-  main .projects-gallery--item {
+  main .projects-gallery__item {
     margin: 30px;
     justify-content: space-evenly;
   }
 }
 @media only screen and (min-width: 821px) and (max-width: 1280px) {
-  main .projects-gallery--item {
+  main .projects-gallery__item {
     justify-content: space-evenly;
     padding: 0 20px 40px 20px;
   }
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px) {
-  main .projects-gallery--item {
+  main .projects-gallery__item {
     padding: 0 50px 40px 50px;
   }
 }
 @media only screen and (min-width: 1401px) {
-  main .projects-gallery--item {
+  main .projects-gallery__item {
     padding: 0 40px 40px 40px;
   }
 }
-main .projects-gallery--item__img {
+main .projects-gallery__item__img {
   height: 176.7px;
   object-fit: cover;
   border: 3px solid #e38650;
   border-radius: 30px;
 }
-main .projects-gallery--item__para {
+main .projects-gallery__item__para {
   margin-top: 3vh;
   font-size: 1em;
 }
-main .projects-gallery--item__links {
+main .projects-gallery__item__links {
   display: flex;
   width: 265px;
   justify-content: space-evenly;
