@@ -9,7 +9,7 @@ body {
     height: 100vh;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body {
     justify-content: space-between;
   }
@@ -31,15 +31,28 @@ body .header {
 @media only screen and (min-width: 481px) and (max-width: 820px) {
   body .header {
     position: fixed;
+    width: 100vw;
+    z-index: 0;
     left: 3vw;
     top: 2vh;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .header {
     position: fixed;
-    left: 2vw;
+    left: 3vw;
     top: 2vh;
+  }
+}
+@media only screen and (min-width: 1281px) and (max-width: 1400px) {
+  body .header {
+    margin-left: 90px;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  body .header {
+    margin-left: 60px;
+    margin-top: 40px;
   }
 }
 body .header__name {
@@ -54,9 +67,9 @@ body .header__name {
     font-size: 80px;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .header__name {
-    font-size: 70px;
+    font-size: 80px;
   }
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px) {
@@ -76,12 +89,12 @@ body .header__job-title {
 }
 @media only screen and (min-width: 481px) and (max-width: 820px) {
   body .header__job-title {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .header__job-title {
-    font-size: 40px;
+    font-size: 35px;
   }
 }
 body .image-container {
@@ -93,7 +106,7 @@ body .image-container {
   z-index: 1;
 }
 body .image-container__background {
-  background: linear-gradient(140deg, #983800, #e3783b);
+  background: linear-gradient(140deg, #983800, #e38650);
   border-radius: 50%;
   width: 230px;
   height: 230px;
@@ -107,7 +120,7 @@ body .image-container__background {
     height: 330px;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .image-container__background {
     width: 310px;
     height: 310px;
@@ -135,7 +148,7 @@ body .image-container__background {
     top: 35vh;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .image-container {
     height: 240px;
     margin: 0;
@@ -176,7 +189,7 @@ body .image-container__image {
     height: 300px;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .image-container__image {
     width: 280px;
     height: 280px;
@@ -195,7 +208,8 @@ body .image-container__image {
   }
 }
 body .navbar-section {
-  margin-right: 20px;
+  margin-right: 30px;
+  margin-bottom: 10px;
 }
 body .navbar-section__nav {
   display: flex;
@@ -207,22 +221,33 @@ body .navbar-section__nav {
     z-index: 0;
     position: fixed;
     left: 47vw;
-    top: 69vh;
+    top: 63vh;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .navbar-section__nav {
     z-index: -1;
     position: fixed;
-    left: 65.5vw;
-    top: 58vh;
+    left: 66vw;
+    top: 53vh;
+  }
+}
+@media only screen and (min-width: 1281px) and (max-width: 1400px) {
+  body .navbar-section__nav {
+    margin-right: 90px;
+  }
+}
+@media only screen and (min-width: 1401px) {
+  body .navbar-section__nav {
+    margin-bottom: 40px;
+    margin-right: 60px;
   }
 }
 body .navbar-section__nav--link {
   padding: 10px;
   font-size: 50px;
   text-decoration: none;
-  color: #e3783b;
+  color: #e38650;
   font-family: "AVENTENA", sans-serif;
 }
 body .navbar-section__nav--link:hover {
@@ -233,14 +258,14 @@ body .navbar-section__nav--link:hover {
 body .navbar-section__nav--link:not(:hover) {
   transform: translate(25px);
   transition: 0.6s;
-  color: #e3783b;
+  color: #e38650;
 }
 @media only screen and (min-width: 481px) and (max-width: 820px) {
   body .navbar-section__nav--link {
     font-size: 78px;
   }
 }
-@media only screen and (min-width: 1011px) and (max-width: 1280px) {
+@media only screen and (min-width: 821px) and (max-width: 1280px) {
   body .navbar-section__nav--link {
     font-size: 70px;
   }

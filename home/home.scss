@@ -27,13 +27,22 @@ body {
     margin: 20px 20px;
     @include m.tablet {
       position: fixed;
+      width: 100vw;
+      z-index: 0;
       left: 3vw;
       top: 2vh;
     }
     @include m.tablet-landscape {
       position: fixed;
-      left: 2vw;
+      left: 3vw;
       top: 2vh;
+    }
+    @include m.laptop {
+      margin-left: 90px;
+    }
+    @include m.hi-res {
+      margin-left: 60px;
+      margin-top: 40px;
     }
 
     &__name {
@@ -46,7 +55,7 @@ body {
         font-size: 80px;
       }
       @include m.tablet-landscape {
-        font-size: 70px;
+        font-size: 80px;
       }
       @include m.laptop {
         font-size: 70px;
@@ -60,10 +69,10 @@ body {
       font-size: 30px;
       padding-top: 10px;
       @include m.tablet {
-        font-size: 40px;
+        font-size: 35px;
       }
       @include m.tablet-landscape {
-        font-size: 40px;
+        font-size: 35px;
       }
     }
   }
@@ -156,7 +165,8 @@ body {
   }
 
   .navbar-section {
-    margin-right: 20px;
+    margin-right: 30px;
+    margin-bottom: 10px;
     &__nav {
       display: flex;
       flex-direction: column;
@@ -165,13 +175,20 @@ body {
         z-index: 0;
         position: fixed;
         left: 47vw;
-        top: 69vh;
+        top: 63vh;
       }
       @include m.tablet-landscape {
         z-index: -1;
         position: fixed;
-        left: 65.5vw;
-        top: 58vh;
+        left: 66vw;
+        top: 53vh;
+      }
+      @include m.laptop {
+        margin-right: 90px;
+      }
+      @include m.hi-res {
+        margin-bottom: 40px;
+        margin-right: 60px;
       }
       &--link {
         padding: 10px;
