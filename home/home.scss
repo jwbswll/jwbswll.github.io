@@ -150,11 +150,11 @@ body {
         top: 25vh;
       }
       @include m.laptop {
-        top: 33vh;
+        top: 36vh;
         left: -5vw;
       }
       @include m.hi-res {
-        top: 29vh;
+        top: 34vh;
         left: -4vw;
       }
       &--link {
