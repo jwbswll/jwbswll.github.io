@@ -199,7 +199,7 @@ body .navbar-section__nav {
 }
 @media only screen and (min-width: 1401px) {
   body .navbar-section__nav {
-    top: 28vh;
+    top: 29vh;
     left: -4vw;
   }
 }
