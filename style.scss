@@ -11,6 +11,7 @@
 
 .page-heading {
   font-family: 'AVENTENA', sans-serif;
+  font-size: 2em;
 }
 
 .external-link {
@@ -38,27 +39,27 @@
   justify-content: center;
   align-items: center;
   border-radius: 20%;
+  &:hover {
+    background-color: c.$secondary;
+    transition: 0.5s;
+    i {
+      background-color: c.$secondary;
+      color: c.$tertiary;
+      transition: 0.5s;
+    }
+  }
+  &:not(:hover) {
+    background-color: c.$tertiary;
+    transition: 0.5s;
+    i {
+      background-color: c.$tertiary;
+      color: c.$secondary;
+      transition: 0.5s;
+    }
+  }
   @include m.home-button-large {
     height: 80px;
     width: 80px;
-    &:hover {
-      background-color: c.$secondary;
-      transition: 0.5s;
-      i {
-        background-color: c.$secondary;
-        color: c.$tertiary;
-        transition: 0.5s;
-      }
-    }
-    &:not(:hover) {
-      background-color: c.$tertiary;
-      transition: 0.5s;
-      i {
-        background-color: c.$tertiary;
-        color: c.$secondary;
-        transition: 0.5s;
-      }
-    }
   }
   i {
     font-size: 30px;

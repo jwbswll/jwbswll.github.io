@@ -4,26 +4,6 @@ main {
   align-items: center;
   height: 100vh;
 }
-@media only screen and (min-width: 481px) and (max-width: 820px) {
-  main .page-heading {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width: 821px) and (max-width: 1280px) {
-  main .page-heading {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width: 1281px) and (max-width: 1400px) {
-  main .page-heading {
-    font-size: 2em;
-  }
-}
-@media only screen and (min-width: 1401px) {
-  main .page-heading {
-    font-size: 2em;
-  }
-}
 main .center-content {
   display: flex;
   flex-direction: column;
@@ -34,27 +14,7 @@ main .center-content {
   width: 100vw;
 }
 main .center-content p {
-  font-size: 1em;
-}
-@media only screen and (min-width: 481px) and (max-width: 820px) {
-  main .center-content p {
-    font-size: 1.3em;
-  }
-}
-@media only screen and (min-width: 821px) and (max-width: 1280px) {
-  main .center-content p {
-    font-size: 1.3em;
-  }
-}
-@media only screen and (min-width: 1281px) and (max-width: 1400px) {
-  main .center-content p {
-    font-size: 1.3em;
-  }
-}
-@media only screen and (min-width: 1401px) {
-  main .center-content p {
-    font-size: 1.3em;
-  }
+  font-size: 1.3em;
 }
 main .center-content .contact-links {
   width: 20vw;
@@ -64,20 +24,20 @@ main .center-content .contact-links {
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px) {
   main .center-content .contact-links {
-    width: 10vw;
+    width: 7vw;
   }
 }
 @media only screen and (min-width: 1401px) {
   main .center-content .contact-links {
-    width: 10vw;
+    width: 2vw;
   }
 }
 main .center-content .contact-links__icon {
-  font-size: 60px;
+  font-size: 65px;
   text-decoration: none;
   color: #e38650;
   background-color: #F5DDB7;
-  margin: 0vh 5vw 2vh 5vw;
+  margin: 0 30px 0 30px;
 }
 main .center-content .contact-links__icon:hover {
   color: #983800;
@@ -86,30 +46,6 @@ main .center-content .contact-links__icon:hover {
 main .center-content .contact-links__icon:not(:hover) {
   color: #e38650;
   transition: 0.5s;
-}
-@media only screen and (min-width: 481px) and (max-width: 820px) {
-  main .center-content .contact-links__icon {
-    font-size: 65px;
-    margin: 0 5vw 2vh 5vw;
-  }
-}
-@media only screen and (min-width: 821px) and (max-width: 1280px) {
-  main .center-content .contact-links__icon {
-    font-size: 65px;
-    margin: 0 3vw 2vh 3vw;
-  }
-}
-@media only screen and (min-width: 1281px) and (max-width: 1400px) {
-  main .center-content .contact-links__icon {
-    font-size: 65px;
-    margin: 0 3vw 2vh 3vw;
-  }
-}
-@media only screen and (min-width: 1401px) {
-  main .center-content .contact-links__icon {
-    font-size: 65px;
-    margin: 0 2vw 2vh 2vw;
-  }
 }
 
 /*# sourceMappingURL=contact.css.map */

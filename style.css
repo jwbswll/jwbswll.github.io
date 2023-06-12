@@ -8,6 +8,7 @@
 
 .page-heading {
   font-family: "AVENTENA", sans-serif;
+  font-size: 2em;
 }
 
 .external-link {
@@ -36,28 +37,28 @@
   align-items: center;
   border-radius: 20%;
 }
+.home-button:hover {
+  background-color: #983800;
+  transition: 0.5s;
+}
+.home-button:hover i {
+  background-color: #983800;
+  color: #e38650;
+  transition: 0.5s;
+}
+.home-button:not(:hover) {
+  background-color: #e38650;
+  transition: 0.5s;
+}
+.home-button:not(:hover) i {
+  background-color: #e38650;
+  color: #983800;
+  transition: 0.5s;
+}
 @media only screen and (min-width: 481px) {
   .home-button {
     height: 80px;
     width: 80px;
-  }
-  .home-button:hover {
-    background-color: #983800;
-    transition: 0.5s;
-  }
-  .home-button:hover i {
-    background-color: #983800;
-    color: #e38650;
-    transition: 0.5s;
-  }
-  .home-button:not(:hover) {
-    background-color: #e38650;
-    transition: 0.5s;
-  }
-  .home-button:not(:hover) i {
-    background-color: #e38650;
-    color: #983800;
-    transition: 0.5s;
   }
 }
 .home-button i {

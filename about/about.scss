@@ -1,25 +1,13 @@
 @use '../partials/mixin' as m;
 
 main {
-  .page-heading {
-    padding: 80px 0 50px 0;
-    @include m.tablet {
-      font-size: 2em;
-    }
-    @include m.tablet-landscape {
-      font-size: 2em;
-    }
-    @include m.laptop {
-      font-size: 2em;
-    }
-    @include m.hi-res {
-      font-size: 2em;
-    }
-  }
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  .page-heading {
+    padding: 60px 0 50px 0;
+  }
   .about-content {
     width: 85vw;
     padding: 0;
@@ -33,10 +21,13 @@ main {
       @include m.tablet-landscape {
         font-size: 1.2em;
       }
+      @include m.laptop {
+        font-size: 1.2em;
+      }
       @include m.hi-res {
-        margin-left: 15vw;
-        margin-right: 15vw;
-        
+        font-size: 1.2em;
+        margin-left: 10vw;
+        margin-right: 10vw;
       }
     }
   
@@ -52,24 +43,8 @@ main {
       width: 70vw
     }
     &__heading {
-    padding-top: 2vh;
-    padding-bottom: 3.5vh;
-    @include m.tablet {
-      font-size: 1.5em;
-      padding: 2vh 0 4vh 0;
-    }
-    @include m.tablet-landscape {
-      font-size: 1.5em;
-      padding: 3vh 0 6vh 0;
-    }
-    @include m.laptop {
-      font-size: 1.3rem;
-      padding: 4vh 0 6vh 0;
-    }
-    @include m.hi-res {
-      font-size: 1.4rem;
-      padding: 4vh 0 6vh 0;
-    }
+    padding: 4vh 0 5vh 0;
+    font-size: 1.5em;
     }
     &__container {
       display: flex;

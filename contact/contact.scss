@@ -2,23 +2,10 @@
 @use '../partials/mixin' as m;
 
 main {
-  .page-heading {
-    @include m.tablet {
-      font-size: 2em;
-    }
-    @include m.tablet-landscape {
-      font-size: 2em;
-    }
-    @include m.laptop {
-      font-size: 2em;
-    }
-    @include m.hi-res {
-      font-size: 2em;
-    }
-  }
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
   .center-content {
     display: flex;
     flex-direction: column;
@@ -28,19 +15,7 @@ main {
     height: 30vh;
     width: 100vw;
     p {
-      font-size: 1em;
-      @include m.tablet {
-        font-size: 1.3em;
-      }
-      @include m.tablet-landscape {
-        font-size: 1.3em;
-      }
-      @include m.laptop {
-        font-size: 1.3em;
-      }
-      @include m.hi-res {
-        font-size: 1.3em;
-      }
+      font-size: 1.3em;
     }
     .contact-links {
       width: 20vw;
@@ -48,18 +23,17 @@ main {
       justify-content: space-around;
       align-items: center;
       @include m.laptop {
-          width: 10vw;
+        width: 7vw;
       }
       @include m.hi-res {
-        width: 10vw;
+        width: 2vw;
     }
       &__icon {
-        font-size: 60px;
+        font-size: 65px;
         text-decoration: none;
         color: c.$tertiary;
         background-color: c.$primary;
-        margin: 0vh 5vw 2vh 5vw;
-        
+        margin: 0 30px 0 30px;
         &:hover {
           color: c.$secondary;
           transition: 0.5s;
@@ -67,22 +41,6 @@ main {
         &:not(:hover) {
           color: c.$tertiary;
           transition: 0.5s;
-        }
-        @include m.tablet {
-          font-size: 65px;
-          margin: 0 5vw 2vh 5vw;
-        }
-        @include m.tablet-landscape {
-          font-size: 65px;
-          margin: 0 3vw 2vh 3vw;
-        }
-        @include m.laptop {
-          font-size: 65px;
-          margin: 0 3vw 2vh 3vw;
-        }
-        @include m.hi-res {
-          font-size: 65px;
-          margin: 0 2vw 2vh 2vw;
         }
       }
     }
