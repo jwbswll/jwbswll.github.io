@@ -193,13 +193,13 @@ body .navbar-section__nav {
 }
 @media only screen and (min-width: 1281px) and (max-width: 1400px) {
   body .navbar-section__nav {
-    top: 29vh;
+    top: 33vh;
     left: -5vw;
   }
 }
 @media only screen and (min-width: 1401px) {
   body .navbar-section__nav {
-    top: 25vh;
+    top: 28vh;
     left: -4vw;
   }
 }
