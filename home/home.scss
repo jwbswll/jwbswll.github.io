@@ -1,55 +1,36 @@
 @use '../partials/mixin' as m;
 @use '../colors' as c;
 
-// change color of border around image to gradient from header color to nav color
-
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  @include m.tablet {
-    justify-content: space-between;
-    height: 100vh;
-  }
-  @include m.tablet-landscape {
-    justify-content: space-between;
-  }
-  @include m.laptop {
-    height: 100vh;
-    // justify-content: space-between;
-  }
-  @include m.hi-res {
-    height: 100vh;
-    justify-content: space-between;
-  }
+  justify-content: space-between;
+  width: 99.9vw;
+
 
   .header {
-    margin: 20px 20px;
+    position: relative;
+    z-index: 0;
+    left: 6vw;
+    top: 2vh;
     @include m.tablet {
-      position: fixed;
-      width: 100vw;
-      z-index: 0;
-      left: 3vw;
+      left: 5vw;
       top: 2vh;
     }
     @include m.tablet-landscape {
-      position: fixed;
       left: 3vw;
       top: 2vh;
     }
     @include m.laptop {
-      margin-left: 90px;
+      left: 3vw;
     }
     @include m.hi-res {
-      margin-left: 60px;
-      margin-top: 40px;
+      left: 3vw;
     }
 
     &__name {
       color: c.$secondary;
       font-size: 50px;
-      font-weight: bold;
-      text-align: left;
       font-family: 'AVENTENA', sans-serif;
       @include m.tablet {
         font-size: 80px;
@@ -58,7 +39,7 @@ body {
         font-size: 80px;
       }
       @include m.laptop {
-        font-size: 70px;
+        font-size: 90px;
       }
       @include m.hi-res {
         font-size: 95px;
@@ -68,31 +49,47 @@ body {
     &__job-title {
       color: c.$secondary;
       font-size: 30px;
-      padding-top: 10px;
+      padding-top: 20px;
       @include m.tablet {
         font-size: 35px;
       }
       @include m.tablet-landscape {
         font-size: 35px;
       }
+      @include m.laptop {
+        font-size: 35px;
+      }
     }
   }
 
   .image-container {
-    margin: 90px 0 80px 0;
-    height: 210px;
+    height: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1;
+    position: relative;
+    top: 26vh;
+    @include m.tablet {
+      top: 24vh;
+    }
+    @include m.tablet-landscape {
+      top: 16vh;
+      left: 0vw;
+    }
+    @include m.laptop {
+      top: 18vh;
+    }
+    @include m.hi-res {
+      left: -1vw;
+      top: 19vh;
+    }
     &__background {
       background: linear-gradient(140deg, c.$secondary, c.$tertiary);
       border-radius: 50%;
       width: 230px;
       height: 230px;
-      z-index: -1;
       filter: blur(16px);
-      position: absolute;
       @include m.tablet {
         width: 330px;
         height: 330px;
@@ -110,45 +107,15 @@ body {
         height: 370px;
       }
     }
-    @include m.tablet {
-      height: 300px;
-      margin: 0;
-      z-index: 1;
-      position: fixed;
-      left: 21.5vh;
-      top: 35vh;
-    }
-    @include m.tablet-landscape {
-      height: 240px;
-      margin: 0;
-      z-index: 1;
-      position: fixed;
-      left: 37vw;
-      top: 35vh;
-    }
-    @include m.laptop {
-      height: 300px;
-      z-index: 1;
-      position: fixed;
-      left: 38vw;
-      top: 25vh;
-    }
-    @include m.hi-res {
-      height: 350px;
-      z-index: 1;
-      position: fixed;
-      left: 39vw;
-      top: 22vh;
-    }
     &__image {
       border-radius: 50%;
       width: 200px;
       height: 200px;
       object-fit: cover;
-      z-index: 0;
+      position: absolute;
       @include m.tablet {
-        width: 300px;
-        height: 300px;
+        width: 280px;
+        height: 280px;
       }
       @include m.tablet-landscape {
         width: 280px;
@@ -166,33 +133,32 @@ body {
   }
 
   .navbar-section {
-    margin-right: 30px;
-    margin-bottom: 10px;
     &__nav {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
+      position: relative;
+      z-index: 0;
+      top: 46vh;
+      left: -10vw;
       @include m.tablet {
-        z-index: 0;
-        position: fixed;
-        left: 49vw;
-        top: 66vh;
+        left: -8vw;
+        top: 45vh;
       }
       @include m.tablet-landscape {
-        z-index: -1;
-        position: fixed;
-        left: 66vw;
-        top: 53vh;
+        left: -7vw;
+        top: 25vh;
       }
       @include m.laptop {
-        margin-right: 90px;
+        top: 29vh;
+        left: -5vw;
       }
       @include m.hi-res {
-        margin-bottom: 40px;
-        margin-right: 60px;
+        top: 25vh;
+        left: -4vw;
       }
       &--link {
-        padding: 10px;
+        padding-top: 10px;
         font-size: 50px;
         text-decoration:none;
         color: c.$tertiary;
