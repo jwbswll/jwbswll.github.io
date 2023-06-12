@@ -1,5 +1,5 @@
 @use '../partials/mixin' as m;
-@use '../colors' as c;
+@use '../partials/colors' as c;
 
 main {
   display: flex;
@@ -8,14 +8,6 @@ main {
   align-items: center;
   .page-heading {
     padding: 50px 0 50px 0;
-    @include m.tablet {
-      font-size: 2em;
-      padding-bottom: 30px;
-    }
-    @include m.tablet-landscape {
-      font-size: 2em;
-      padding-top: 40px
-    }
 
   }
   .projects-gallery {
